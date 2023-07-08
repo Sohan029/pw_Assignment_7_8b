@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 500px;
+        width: 600px;
+        border: 1px solid;
+        margin: 3rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 8px solid rgb(227, 229, 229);
+        border-top: 8px solid rgb(5, 180, 255);
+        animation: spin 1s linear 0ms infinite;
+        /* transform: rotate(360deg); */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

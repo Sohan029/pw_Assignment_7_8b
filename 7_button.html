@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 600px;
+        height: 500px;
+        border: 2px solid;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        position: relative;
+      }
+      .click {
+        padding: 1rem 4rem;
+        border-radius: 10px;
+        border: 0px;
+        background-image: linear-gradient(
+          to right,
+          rgb(131, 187, 202),
+          rgb(22, 89, 246)
+        );
+
+        color: aliceblue;
+        font-weight: 600;
+        position: absolute;
+        animation: move .5s ease-in 100 alternate;
+      }
+      @keyframes move {
+        from {
+          top: 35%; 
+        }
+        to {
+          top: 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <button class="click">Click Me To Visit PW Skills.</button>
+    </div>
+  </body>
+</html>
